@@ -1,9 +1,9 @@
 +++
-title = "A33 - Mi Enel - Dettagli conto page"
+title = "Segunda Via"
 layout = "moduli_private_area_brasil"
 +++
 
-<div class="pvtArea-main pvtArea-column pvtModules-column pvtModules-segundavia">
+<div class="pvtArea-main pvtArea-column pvtArea-column pvtArea-segundavia">
   <!-- ACCOUNT -->
 
     <div class="pvtArea-breadcrumb desktop-visible">
@@ -31,7 +31,7 @@ layout = "moduli_private_area_brasil"
             </div>
         </div>
         <div class="pvtArea-account-row">
-            <div class="pvtArea-account-table-row fourItems">
+            <div class="pvtArea-account-table-row fourItems item-icon-btn">
                 <div class="pvtArea-account-table-item">
                     <span class="pvtArea-account-item-title">Mes / Ano de Referencia</span>
                     <span class="text">Novembro / 2019</span>
@@ -47,65 +47,279 @@ layout = "moduli_private_area_brasil"
                     <span class="text">R$ 99,99</span>
                 </div>
                 
-                <div class="pvtArea-account-table-item buttons-cell">
-                    <a href="javascript:void(0);" class="ico-link"><span class="icon-print"></span></a>
-                    <a href="javascript:void(0);" class="ico-link"><span class="icon-mail"></span></a>
-                    <input type="submit" value="BAIXAR CONTA">
-                </div>
+                <div class="pvtArea-account-table-item">
 
+
+                    <div class="item-icon-btn-right">
+                        <a href="javascript:void(0);" class="ico-link"><span class="icon-print"></span></a>
+                     
+                        <a 
+                            href="javascript:void(0);" 
+                            class="ico-link modal-open" 
+                            style="overflow: inherit;" 
+                            data-src="#emailSegundaVia"
+                            data-base-class="white-bg-popup"
+                        >
+                            <span class="icon-mail"></span>
+                        </a>
+                
+                        <input type="submit" value="BAIXAR CONTA">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="pvtArea-account mobile-white">
-        <div class="pvtArea-composicao-faturamento-info">
-
-            <h2 class="pvtArea-account-item-title-light">
-                Composição de Faturamento
+    <div class="pvtArea-account">
+        <div class="pvtArea-info-box">
+            <h2>
+                Segunda Via de Fatura
             </h2>
             
-            <div class="composicao-faturamento-icon-box">
+            <div class="pvtArea-info-box-icon-box">
                 <div>
-                    <img src="../img/icons/icon-bulb.svg" height="25px" />
+                    <img src="../img/icons/icon-bulb.svg"  />
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectur sadipscing elitr, sed diam nonumy eirmod tempor.
+                    Tenha acesso rápido a fácil as faturas de códigos de barras da sua Unidade Consumidora.
                 </p>
             </div>
             
             <p class="pvtArea-account-item-text">
-                Lorem ipsum dolor sit amet, consectur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-                magna aliquyam erat
+                Para realizar o download, clique no ícone PDF para impressao; ou copie os códigos de barra para efetuar
+                os pagamentos online:
             </p>
         </div>
-    </div>
 
+        <table class="table-pvt responsive display" id="tableSegundaViaFatura">
+            <thead>
+              <tr>
+                <th scope="col" width="12%">N°</th>
+                <th scope="col" width="6%">Leitura</th>
+                <th scope="col" width="12%">Referência</th>
+                <th scope="col" width="18%">Consumo (Kwh)</th>
+                <th scope="col" width="10%">Vencimiento</th>
+                <th scope="col" width="15%">Tipo</th>
+                <th scope="col" width="6%">Valor</th>
+                <th scope="col" width="6%">Pagamento</th>
+                <th scope="col" width="14%">Seleccione para agrupar</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="N°">47</td>
+                    <td data-label="Leitura">3.492</td>
+                    <td data-label="Referência">10/2019</td>
+                    <td data-label="Consumo (Kwh)"> 200</td>
+                    <td data-label="Vencimiento">05/11/2019</td>
+                    <td data-label="Tipo">Fatura</td>
+                    <td data-label="Valor">R$ 99,99</td>
+                    <td data-label="Pagamento">Em aberto</td>
+                    <td data-label="Selecione para agrupar">    
+                        <div class="table-icon-container">
+                            <input type="checkbox" id="selecione-agrupar-0" name="selecione-agrupar-0">
+                            <label for="selecione-agrupar-0"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="N°">46</td>
+                    <td data-label="Leitura">3.192</td>
+                    <td data-label="Referência">09/2019</td>
+                    <td data-label="Consumo (Kwh)"> 150</td>
+                    <td data-label="Vencimiento">05/10/2019</td>
+                    <td data-label="Tipo">Refatura</td>
+                    <td data-label="Valor">R$ 99,99</td>
+                    <td data-label="Pagamento">Paga</td>
+                    <td data-label="Selecione para agrupar">    
+                        <div class="table-icon-container">
+                            <input type="checkbox" id="selecione-agrupar-1" name="selecione-agrupar-1">
+                            <label for="selecione-agrupar-1"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="N°">45</td>
+                    <td data-label="Leitura">3.430</td>
+                    <td data-label="Referência">08/2019</td>
+                    <td data-label="Consumo (Kwh)"> 150</td>
+                    <td data-label="Vencimiento">05/09/2019</td>
+                    <td data-label="Tipo">Fatura</td>
+                    <td data-label="Valor">R$ 74,99</td>
+                    <td data-label="Pagamento">Paga</td>
+                    <td data-label="Selecione para agrupar">    
+                        <div class="table-icon-container">
+                            <input type="checkbox" id="selecione-agrupar-2" name="selecione-agrupar-2">
+                            <label for="selecione-agrupar-2"></label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top:48px">
+            <button class="latam-btn-cta--lightgrey btn-hide-icons-xs">
+                <span class="icon-download"></span> <span>Salvar Em Pdf </span>
+            </button>
+            <button class="latam-btn-cta--lightgrey btn-hide-icons-xs">
+                <span class="icon-debito_automatico"></span> <span>Código de Barras</span>
+            </button>
+            <button class="latam-btn-cta--lightgrey btn-hide-icons-xs modal-open" data-src="#emailSegundaVia" data-base-class="white-bg-popup">
+                <span class="icon-mail"></span> <span>Envia por e-mail </span>
+            </button>
+            <button class="latam-btn-cta--lightgrey btn-hide-icons-xs">
+                <span class="icon-print"></span> <span>Imprimir </span>
+            </button>
+        </div>
+    </div>
 </div>
+
+<div id="emailSegundaVia" class="email-segunda-via-popup" style="display: none;">
+    <form class="emailSegundaVia-cnt form-content">
+        <p class="latam-h6">Por favor, confirme o e-mail para o envio da segunda via: </p>
+        
+        <div class="form-group form-group-full">
+            <input type="text" class="form-control"/>
+        </div>
+        
+        <div class="form-group form-group-full">
+            <div>
+                <input type="checkbox" id="email-segunda-via-popup" name="cc">
+                <label for="email-segunda-via-popup">Eu atorizo salvar esse e-mail como contato.</label>
+            </div>
+        </div>
+
+        <button type="submit" class="latam-btn-cta--pink">
+            Enviar
+        </button>
+    </form> 
+</div> 
+
+
 <style>
+
+    .pvtArea-segundavia{
+        margin-bottom: 70px;
+    }
+    
+    .pvtArea-segundavia .pvtArea-account-multirow .pvtArea-account-row:first-child{
+        border-bottom: 0;
+    }
+
+    .pvtArea-segundavia .pvtArea-account-table-row.item-icon-btn{
+        border: 0;
+    }
+
+    .email-segunda-via-popup .fancybox-close-small{
+        display: none;
+    }
+    
+    .email-segunda-via-popup{
+        max-width: calc(100% - 30px);
+        padding: 20px 30px 34px 30px;
+        width: 567px;
+        border: 1px solid #ff0f64;
+    }
+
+    .emailSegundaVia-cnt{
+        width: auto;
+    }
+    
+    .emailSegundaVia-cnt .latam-h6{
+        font-family: "Univers";
+        font-size: 22px;
+        margin-bottom: 28px;
+    }
+    
+    .emailSegundaVia-cnt .form-group{
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .emailSegundaVia-cnt.form-content input[type='checkbox'] + label{
+        margin-bottom: 0;
+    }
+
+    .white-bg-popup .fancybox-bg {
+        background: #ffffff;
+    }
+
     @media screen and (min-width:  1024px){
-        .pvtModules-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:first-child{
+        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:first-child{
             flex: 0 0 33%;
         }
  
-        .pvtModules-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item {
+        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item {
             flex: 0 0 auto;
         }
  
-        .pvtModules-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item.buttons-cell {
+        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:last-child {
             margin-left: auto;
         }
 
-        .pvtModules-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:nth-child(2){
+        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:last-child > div{
+            width: 100%;
+            padding:0;
+        }
+
+        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:nth-child(2){
             margin-right: 95px;
         }
 
-        .pvtModules-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-item-title{
+        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-item-title{
             font-size: 14px;
         }
     }
+
     @media screen and (min-width: 768px){
-        .pvtModules-segundavia .pvtArea-account-multirow .pvtArea-account-row:first-child{
-            border-bottom: 0;
+        
+        .pvtArea-segundavia .pvtArea-account-table-row.item-icon-btn{
+            margin: 0;
         }
     }
+    
+    @media screen and (max-width: 768px){
+        .pvtArea-segundavia .pvtArea-info-box > p {
+            display: none;
+        }
+
+        .pvtArea-segundavia .pvtArea-account-multirow .pvtArea-account-row:last-child{
+            display: none;
+        }
+        
+        .pvtArea-segundavia table{
+            margin-top: 40px;
+        }
+
+        .pvtArea-segundavia .pvtArea-info-box{
+            margin-top: 14px;
+        }
+
+        
+        .email-segunda-via-popup{
+            padding: 20px 20px 34px 20px;
+        }
+
+        .emailSegundaVia-cnt .latam-h6 {
+            font-size: 20px;
+        }
+    }
+
 </style>
+<script>
+
+    var tableSegundaViaFatura = $('#tableSegundaViaFatura').DataTable( {
+        "ordering": false,
+        "info": false,
+        "searching": false,
+        "scrollX": false,
+        "lengthChange": false,
+        "paging": true,
+        "language": {
+            "paginate": {
+                "previous": "Anterior",
+                "next": "Próxima"
+            }
+        }
+    });
+</script>
