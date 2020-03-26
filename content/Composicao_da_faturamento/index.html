@@ -30,7 +30,7 @@ layout = "moduli_private_area_brasil"
         </div>
     </div>
 
-    <div class="pvtArea-account mobile-white">
+    <div class="pvtArea-account">
         
         <div class="pvtArea-info-box">
 
@@ -56,18 +56,18 @@ layout = "moduli_private_area_brasil"
         <table class="table-composicao-faturamento compact" id="tableComposicaoDaFaturamento">
             <thead>
                 <tr>
-                <th scope="col">Ref</th>
-                <th scope="col"> &nbsp; </th>
-                <th scope="col">Energia</th>
-                <th scope="col">Distribucao</th>
-                <th scope="col">Transmissao</th>
-                <th scope="col">Tributos</th>
-                <th scope="col">Perdas</th>
-                <th scope="col">ICMS</th>
-                <th scope="col">PIS</th>
-                <th scope="col">COFINS</th>
-                <th scope="col">Demais Itens</th>
-                <th scope="col">Total</th>
+                    <th scope="col">Ref</th>
+                    <th scope="col"> &nbsp; </th>
+                    <th scope="col">Energia</th>
+                    <th scope="col">Distribução</th>
+                    <th scope="col">Transmissao</th>
+                    <th scope="col">Tributos</th>
+                    <th scope="col">Perdas</th>
+                    <th scope="col">ICMS</th>
+                    <th scope="col">PIS</th>
+                    <th scope="col">COFINS</th>
+                    <th scope="col">Demais Itens</th>
+                    <th scope="col">Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -451,337 +451,209 @@ layout = "moduli_private_area_brasil"
             </tbody>
         </table>
 
-        <div class="pvtArea-composicao-faturamento-info-mobile">
-
-            <h2 class="pvtArea-account-item-title">
+        <div class="visible-xs">
+            <h2 class="visible-xs pvtArea-account-item-title">
                 Composição de Faturamento
             </h2>
 
-            <p class="pvtArea-account-item-text">
-                Escolha o Mes de Referencia que deseja consultar:
-            </p>
-
-            <select class="form-control" id="listaMeses" name="listaMeses">
-                <option value="jun/ 19">Junio - 2019</option>
-                <option value="jul/ 19">Julio - 2019</option>
-                <option value="Mai/ 19">Setembro - 2019</option>
-                <option value="Ago/ 18">Agosto - 2018</option>
+            <h3 class="pvtArea-select-heading">
+                Escolha o Mês de Referência que deseja consultar:
+            </h3>
+            <select class="selectbox-gray " id="listaMeses" name="listaMeses">
+                <option value="10/2019" selected>Outubro - 2019</option>
+                <option value="09/2019">Setembro - 2019</option>
+                <option value="08/2019">Agosto - 2018</option>
             </select>
+            <p class="selecbox-small-label">Mes de apuracao: AGO 19 | Conjunto Elétrico: LAPA </p>
+        </div>
 
-            <small class="pvtArea-account-item-text"> Mes de apuracao: AGO 19 | Conjunto Elétrico: LAPA </small>
-            
-            <table class="table-composicao-faturamento compact mobile" id="tableComposicaoDaFaturamentoMobile"> 
+        <div class="pvtArea-composicao-faturamento-info-mobile">
+            <table class="table-pvt table-composicao-faturamento  display mobile-heading-on-side mobile" id="tableComposicaoDaFaturamentoMobile"> 
                 <thead>
-                    <th style="border:0;padding:0"></th>
-                    <th style="border:0;padding:0"></th>
-                    <th style="border:0;padding:0"></th>
+                    <tr>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                        <th style="padding:0;"> </th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="2">Energia</td>
-                        <td>R$</td>
-                        <td>518,20</td>
+                        <td data-label="Energia" data-search="10/2019">
+                            <span data-label="R$"> 518,20</span>
+                            <span data-label="%">26,06</span>
+                        </td>
+                        <td data-label="Distribução">
+                            <span data-label="R$">202,16</span>
+                            <span data-label="%">8,61</span>
+                        </td>
+                        <td data-label="Transmissao">
+                            <span data-label="R$">84,44</span>
+                            <span data-label="%">3,59</span>
+                        </td>
+                        <td data-label="Tributos">
+                            <span data-label="R$">149,36</span>
+                            <span data-label="%">26,35</span>
+                        </td>
+                        <td data-label="Perdas">
+                            <span data-label="R$">121,32</span>
+                            <span data-label="%">19,36</span>
+                        </td>
+                        <td data-label="ICMS">
+                            <span data-label="R$">25,60</span>
+                            <span data-label="%">16,03</span>
+                        </td>
+                        <td data-label="PIS">
+                            <span data-label="R$">53,21</span>
+                            <span data-label="%">100</span>
+                        </td>
+                        <td data-label="COFINS">
+                            <span data-label="R$">16,23</span>
+                            <span data-label="%">100</span>
+                        </td>
+                        <td data-label="Demais Itens">
+                            <span data-label="R$">25,60</span>
+                            <span data-label="%">16,03</span>
+                        </td>
+                        <td data-label="Total">
+                            <span data-label="R$">1996,52</span>
+                            <span data-label="%">1000</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="d-none">Energia</td>
-                        <td>%</td>
-                        <td>26,06</td>
+                        <td data-label="Energia" data-search="08/2019">
+                            <span data-label="R$"> 312,20</span>
+                            <span data-label="%">26,06</span>
+                        </td>
+                        <td data-label="Distribução">
+                            <span data-label="R$">121,16</span>
+                            <span data-label="%">8,61</span>
+                        </td>
+                        <td data-label="Transmissao">
+                            <span data-label="R$">84,44</span>
+                            <span data-label="%">3,59</span>
+                        </td>
+                        <td data-label="Tributos">
+                            <span data-label="R$">149,36</span>
+                            <span data-label="%">26,35</span>
+                        </td>
+                        <td data-label="Perdas">
+                            <span data-label="R$">121,32</span>
+                            <span data-label="%">19,36</span>
+                        </td>
+                        <td data-label="ICMS">
+                            <span data-label="R$">25,60</span>
+                            <span data-label="%">16,03</span>
+                        </td>
+                        <td data-label="PIS">
+                            <span data-label="R$">53,21</span>
+                            <span data-label="%">100</span>
+                        </td>
+                        <td data-label="COFINS">
+                            <span data-label="R$">16,23</span>
+                            <span data-label="%">100</span>
+                        </td>
+                        <td data-label="Demais Itens">
+                            <span data-label="R$">25,60</span>
+                            <span data-label="%">16,03</span>
+                        </td>
+                        <td data-label="Total">
+                            <span data-label="R$">1696,52</span>
+                            <span data-label="%">1000</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td  rowspan="2">Distribucao</td>
-                        <td> R$ </td>
-                        <td> 202,06 </td>
+                        <td data-label="Energia" data-search="09/2019">
+                            <span data-label="R$"> 412,20</span>
+                            <span data-label="%">26,06</span>
+                        </td>
+                        <td data-label="Distribução">
+                            <span data-label="R$">121,16</span>
+                            <span data-label="%">8,61</span>
+                        </td>
+                        <td data-label="Transmissao">
+                            <span data-label="R$">84,44</span>
+                            <span data-label="%">3,59</span>
+                        </td>
+                        <td data-label="Tributos">
+                            <span data-label="R$">149,36</span>
+                            <span data-label="%">26,35</span>
+                        </td>
+                        <td data-label="Perdas">
+                            <span data-label="R$">121,32</span>
+                            <span data-label="%">19,36</span>
+                        </td>
+                        <td data-label="ICMS">
+                            <span data-label="R$">25,60</span>
+                            <span data-label="%">16,03</span>
+                        </td>
+                        <td data-label="PIS">
+                            <span data-label="R$">53,21</span>
+                            <span data-label="%">100</span>
+                        </td>
+                        <td data-label="COFINS">
+                            <span data-label="R$">16,23</span>
+                            <span data-label="%">100</span>
+                        </td>
+                        <td data-label="Demais Itens">
+                            <span data-label="R$">25,60</span>
+                            <span data-label="%">16,03</span>
+                        </td>
+                        <td data-label="Total">
+                            <span data-label="R$">1696,52</span>
+                            <span data-label="%">1000</span>
+                        </td>
                     </tr>
-                    <tr>
-                        <td class="d-none">Distribucao</td>
-                        <td> % </td>
-                        <td>8,61</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">Perdas</td>
-                        <td> R$ </td>
-                        <td> 202,06 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">Perdas</td>
-                        <td> % </td>
-                        <td>8,61</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">ICMS</td>
-                        <td> R$ </td>
-                        <td> 25,60 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">ICMS</td>
-                        <td> % </td>
-                        <td>16,03</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">PIS</td>
-                        <td> R$ </td>
-                        <td> 53,21 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">PIS</td>
-                        <td> % </td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">COFINS</td>
-                        <td> R$ </td>
-                        <td> 16,23 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">COFINS</td>
-                        <td> % </td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">Transmissao</td>
-                        <td> R$ </td>
-                        <td> 16,23 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">Transmissao</td>
-                        <td> % </td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">Tributos</td>
-                        <td> R$ </td>
-                        <td> 16,23 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">Tributos</td>
-                        <td> % </td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">Demais Itens</td>
-                        <td> R$ </td>
-                        <td> 16,23 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">Demais Itens</td>
-                        <td> % </td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td  rowspan="2">Total</td>
-                        <td> R$ </td>
-                        <td> 1.996,52 </td>
-                    </tr>
-                    <tr>
-                        <td class="d-none">Total</td>
-                        <td> % </td>
-                        <td>100</td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
     </div>
 </div>
 
-<style>
-
-    .pvtArea-account-row-faturamento{
-        padding-top: 0;
-    }
-
-    .pvtArea-account-row-faturamento .pvtArea-account-table-row{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    .d-none{
-        display: none;
-    }
-
-    .table-composicao-faturamento{
-        width: 100%;
-    }
-    
-    .table-composicao-faturamento:not(.mobile),
-    .pvtArea-info-box{
-        display: none;
-    }
-
-    .table-composicao-faturamento.compact{
-        border-collapse: collapse;
-        margin-bottom: 80px;
-    }
-
-    .table-composicao-faturamento.compact thead th, 
-    .table-composicao-faturamento.compact thead td,
-    .table-composicao-faturamento.mobile td[rowspan] {
-        padding: 26px 15px;
-        text-align: center;
-        font-size: 13px;
-        font-weight: bold;
-    }
-    
-    .table-composicao-faturamento.mobile td[rowspan]{
-        padding: 26px 5px;
-    }
-
-    .table-composicao-faturamento.compact th,
-    .table-composicao-faturamento.compact td{
-        border: 2px solid #e9e9e9;
-    }
-
-    .table-composicao-faturamento.compact tbody td{
-        padding: 10px 12px;
-        text-align: center;
-        font-size: 13px;
-    }
-
-    .table-composicao-faturamento.compact tr:nth-child(odd) > td{
-        background-color: #fff;
-    }
-
-    .table-composicao-faturamento.compact tr:nth-child(4n +1 ) > td, 
-    .table-composicao-faturamento.compact tr:nth-child(4n + 2 ) > td{
-        background-color: #f7f7f7;
-    }
-    
-    .pvtArea-composicao-faturamento .pvtArea-account-row-cnt {
-        margin: 0;
-    }
-
-
-
-    /* Mobile styles*/
-
-    .pvtArea-composicao-faturamento-info-mobile .selectboxit-container .selectboxit-btn{
-        background-color: #f5f5f5;
-        border-color: #f5f5f5;   
-    }
-    
-    .pvtArea-composicao-faturamento-info-mobile .selectboxit-container .selectboxit-btn:after{
-        color: #ff0f64;   
-    }
-
-    .pvtArea-composicao-faturamento-info-mobile .selectboxit-container .selectboxit-text{    
-        line-height: 1.8;
-    }
-    
-    .pvtArea-composicao-faturamento-info-mobile h2{
-        margin: 0 0 16px;
-        font-size: 20px;
-        letter-spacing: -1px;
-    }
-    
-    .pvtArea-composicao-faturamento-info-mobile p{
-        font-size: 20px;
-        color: #000;
-        margin: 40px 0 18px;
-        max-width: 300px;
-        line-height: 1.3;
-    }
-
-    .pvtArea-composicao-faturamento-info-mobile small{
-        color: #606060;
-        margin: 7px 0 22px;
-        display: block;
-        font-size: 12px;
-    }
-    
-
-    @media screen and (max-width: 767px){
-        .pvtArea-account-row-faturamento .pvtArea-account-table-item{
-            margin-top: 0;
-            margin-bottom: 20px;
-        }
-        
-        .pvtArea-account-row-faturamento .pvtArea-account-table-item:nth-child(1){
-            margin-right: 20px;
-        }
-
-        .pvtArea-account-row-faturamento .pvtArea-account-table-item:nth-child(3){
-            width: 100%;
-        }
-        
-        .pvtArea-account-row-faturamento .pvtArea-account-item-title {
-            font-size: 16px;
-        }
-    }
-
-    @media screen and (min-width: 768px){
-        .pvtArea-composicao-faturamento .pvtArea-account-table-row {
-            padding-bottom: 0;
-        }
-
-        .pvtArea-composicao-faturamento .pvtArea-account-table-row.threeItems .pvtArea-account-table-item{
-            margin: 19px 0 0;
-        }
-    }
-
-    @media screen and (min-width: 1024px){
-        .pvtArea-composicao-faturamento .pvtArea-account {
-            margin-top: 26px;
-            padding-bottom: 10px;
-        }
-    }
-    
-    @media screen and (min-width: 1281px) {
-        
-        .table-composicao-faturamento.compact{
-            margin-bottom: 135px;
-        }
-
-        .pvtArea-info-box{
-            display: block;
-        }
-
-        .table-composicao-faturamento:not(.mobile){
-            display: table;
-        }
-
-        .pvtArea-composicao-faturamento-info-mobile,
-        .table-composicao-faturamento.mobile{
-            display: none;
-        }
-    }
-    
-    @media screen and (max-width: 1023px){
-        .pvtArea-account.mobile-white{
-            margin-top: 0;
-        }
-    }
-</style>
-
 <script>
 
 $(function(){
 
     var tableFacturaMobile = $('#tableComposicaoDaFaturamentoMobile').DataTable( {
-        "orderable": false,
+        "ordering": false,
         "info": false,
         "searching": true,
         "scrollX": false,
         "lengthChange": false,
-        "paging": false
+        "paging": false,
+        "language": {
+            "zeroRecords": "Não há registros a serem exibidos"
+        }
     });
-    
+
     // Stores the select element in a variable
     var monthSelectBox = $("#listaMeses");
 
     // Creates the SelectBoxIt drop down
     monthSelectBox.selectBoxIt();
-    selectedMonth = monthSelectBox.val()
 
-    // // Listens for the change event on the original select box
-    // monthSelectBox.on("change", function() {
-    //     // Prints the updated drop down value
-    //     selectedMonth = $(this).val();
-    //     console.log(selectedMonth);
-    //     console.log(tableFacturaMobile.columns(0));
+    // Listens for the change event on the original select box
+    monthSelectBox.on("change", function() {
+        // Prints the updated drop down value
+        setMobileTableValue();
+    });
+    
+    if(window.innerWidth < 768){
+        setMobileTableValue();
+    }
 
-    //     tableFacturaMobile.columns(0).search(selectedMonth).draw();
-    // });
+    function setMobileTableValue(){
+        var val = monthSelectBox.val();
+        var search = tableFacturaMobile.columns(0).search( val )
+        search.draw();
+    }
 })
 
 </script>

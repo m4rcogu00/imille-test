@@ -71,8 +71,13 @@ layout = "moduli_private_area_brasil"
     </div>
 
     <div class="pvtArea-account">
+        
+        <h2 class="visible-xs pvtArea-account-item-title"  style="margin-top: 22px">
+            Segunda Via de Fatura
+        </h2>
+
         <div class="pvtArea-info-box">
-            <h2>
+            <h2 class="hidden-xs">
                 Segunda Via de Fatura
             </h2>
             
@@ -85,13 +90,25 @@ layout = "moduli_private_area_brasil"
                 </p>
             </div>
             
-            <p class="pvtArea-account-item-text">
+            <p class="pvtArea-account-item-text hidden-xs">
                 Para realizar o download, clique no ícone PDF para impressao; ou copie os códigos de barra para efetuar
                 os pagamentos online:
             </p>
         </div>
 
-        <table class="table-pvt responsive display" id="tableSegundaViaFatura">
+        <div class="visible-xs">
+            <h3 class="pvtArea-select-heading">
+                Escolha o Mês de Referência que deseja consultar:
+            </h3>
+            <select class="selectbox-gray " id="listaMeses" name="listaMeses">
+                <option value="10/2019" selected>Outubro - 2019</option>
+                <option value="09/2019">Setembro - 2019</option>
+                <option value="08/2019">Agosto - 2018</option>
+            </select>
+            <p class="selecbox-small-label">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
+        </div>
+
+        <table class="table-pvt responsive display mobile-heading-on-side" id="tableSegundaViaFatura">
             <thead>
               <tr>
                 <th scope="col" width="12%">N°</th>
@@ -194,124 +211,14 @@ layout = "moduli_private_area_brasil"
         </button>
     </form> 
 </div> 
-
-
-<style>
-
-    .pvtArea-segundavia{
-        margin-bottom: 70px;
-    }
-    
-    .pvtArea-segundavia .pvtArea-account-multirow .pvtArea-account-row:first-child{
-        border-bottom: 0;
-    }
-
-    .pvtArea-segundavia .pvtArea-account-table-row.item-icon-btn{
-        border: 0;
-    }
-
-    .email-segunda-via-popup .fancybox-close-small{
-        display: none;
-    }
-    
-    .email-segunda-via-popup{
-        max-width: calc(100% - 30px);
-        padding: 20px 30px 34px 30px;
-        width: 567px;
-        border: 1px solid #ff0f64;
-    }
-
-    .emailSegundaVia-cnt{
-        width: auto;
-    }
-    
-    .emailSegundaVia-cnt .latam-h6{
-        font-family: "Univers";
-        font-size: 22px;
-        margin-bottom: 28px;
-    }
-    
-    .emailSegundaVia-cnt .form-group{
-        padding: 0;
-        margin-bottom: 24px;
-    }
-
-    .emailSegundaVia-cnt.form-content input[type='checkbox'] + label{
-        margin-bottom: 0;
-    }
-
-    .white-bg-popup .fancybox-bg {
-        background: #ffffff;
-    }
-
-    @media screen and (min-width:  1024px){
-        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:first-child{
-            flex: 0 0 33%;
-        }
- 
-        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item {
-            flex: 0 0 auto;
-        }
- 
-        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:last-child {
-            margin-left: auto;
-        }
-
-        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:last-child > div{
-            width: 100%;
-            padding:0;
-        }
-
-        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:nth-child(2){
-            margin-right: 95px;
-        }
-
-        .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-item-title{
-            font-size: 14px;
-        }
-    }
-
-    @media screen and (min-width: 768px){
-        
-        .pvtArea-segundavia .pvtArea-account-table-row.item-icon-btn{
-            margin: 0;
-        }
-    }
-    
-    @media screen and (max-width: 768px){
-        .pvtArea-segundavia .pvtArea-info-box > p {
-            display: none;
-        }
-
-        .pvtArea-segundavia .pvtArea-account-multirow .pvtArea-account-row:last-child{
-            display: none;
-        }
-        
-        .pvtArea-segundavia table{
-            margin-top: 40px;
-        }
-
-        .pvtArea-segundavia .pvtArea-info-box{
-            margin-top: 14px;
-        }
-
-        
-        .email-segunda-via-popup{
-            padding: 20px 20px 34px 20px;
-        }
-
-        .emailSegundaVia-cnt .latam-h6 {
-            font-size: 20px;
-        }
-    }
-
-</style>
 <script>
+
+$(function(){
 
     var tableSegundaViaFatura = $('#tableSegundaViaFatura').DataTable( {
         "ordering": false,
         "info": false,
-        "searching": false,
+        "searching": true,
         "scrollX": false,
         "lengthChange": false,
         "paging": true,
@@ -322,4 +229,27 @@ layout = "moduli_private_area_brasil"
             }
         }
     });
+
+    // Stores the select element in a variable
+    var monthSelectBox = $("#listaMeses");
+
+    // Creates the SelectBoxIt drop down
+    monthSelectBox.selectBoxIt();
+
+    // Listens for the change event on the original select box
+    monthSelectBox.on("change", function() {
+        // Prints the updated drop down value
+        setMobileTableValue();
+    });
+    
+    if(window.innerWidth < 768){
+        setMobileTableValue();
+    }
+
+    function setMobileTableValue(){
+        var val = monthSelectBox.val();
+        var search = tableSegundaViaFatura.columns(2).search( val )
+        search.draw();
+    }
+});
 </script>

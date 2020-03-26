@@ -5160,15 +5160,43 @@ form.btnCombined input[type="submit"] {
   MArco -------
 */
 
+.d-none{
+  display: none;
+}
+
+.selecbox-small-label{
+    font-family: "Univers";
+    color: #5f5f5f;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    margin: 10px 0 30px;
+}
+
+.selectbox-gray.selectboxit-btn,
+.selectbox-gray.selectboxit-btn.selectboxit-focus,
+.selectbox-gray.selectboxit-btn.selectboxit-enabled:focus {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;   
+}
+
+.selectbox-gray.selectboxit-btn:after{
+  color: #ff0f64;   
+}
+
+.selectbox-gray .selectboxit-text{    
+  font-family: "Univers";
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: italic;
+}
 
 
-
-
-
-
-
-
-
+.selectbox-gray + small{
+  color: #606060;
+  margin: 7px 0 22px;
+  display: block;
+  font-size: 12px;
+}
 
 .pvtArea-info-box {
   font-family: "Univers";
@@ -5218,6 +5246,498 @@ form.btnCombined input[type="submit"] {
   letter-spacing: 0.3px;
   color: #3f3f3f;
 }
+
+
+.pvtArea-historico-consumo .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.pvtArea-historico-consumo .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.pvtArea-historico-consumo-ja .dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.pvtArea-historico-consumo-ja .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    border: 0;
+}
+
+/* Table with Chart*/
+
+.pvtArea-select-heading{
+  font-family: "Univers";
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  font-weight: 600;
+  margin: 35px 0 10px;
+  line-height: 1.4;
+  max-width: 260px;
+}
+
+.table-has-chart .details-control span{
+  width: 0;    
+  height: 0;    
+  display: inline-block;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top: 6px solid #000;
+  vertical-align: 2px;
+  margin-right: 3px;
+}
+
+.table-has-chart .shown .details-control span{
+  transform: rotate(180deg);
+}
+
+.table-has-chart tr.shown + tr td{
+  padding: 0;
+}
+
+.table-has-chart .chart-container,
+.mobile-table-chart-scroll-wrapper .chart-container{
+  height: 250px;
+  position: relative;
+}
+
+.table-has-chart .chart-container canvas,
+.mobile-table-chart-scroll-wrapper canvas{
+  width: 100%
+}
+
+.table-has-chart .row-chart{
+  padding: 0;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  background-color: #f5f4f4;
+  padding: 20px;
+}
+
+.table-has-chart .row-chart h4{
+  font-size: 14px;
+  margin-bottom: 38px;
+  text-align: left;;
+}
+
+.table-has-chart .row-chart h4 span{
+  font-family: "UniversLight";
+}
+
+.table-has-chart .table-chart-scroll-wrapper,
+.mobile-table-chart-scroll-wrapper .table-chart-scroll-wrapper{
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.mobile-table-chart-scroll-wrapper .chart-container{
+  width: 950px;
+  padding-right: 37px;
+}
+
+.mobile-table-chart-scroll-wrapper:after{
+  content: '';
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 52px;
+  background: linear-gradient(-90deg, #fff 0,#fff 46%,transparent);
+  height: 100%;
+}
+
+.pvtArea-table-scroll::-webkit-scrollbar,
+.table-chart-scroll-wrapper::-webkit-scrollbar {
+  height: 7px;
+}
+.pvtArea-table-scroll,
+.table-chart-scroll-wrapper {
+  scrollbar-color: #d7d7d6 #f2f2f2;
+}
+
+.pvtArea-table-scroll::-webkit-scrollbar-track,
+.table-chart-scroll-wrapper::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  border-radius: 6px;
+}
+
+.pvtArea-table-scroll::-webkit-scrollbar-thumb,
+.table-chart-scroll-wrapper::-webkit-scrollbar-thumb {
+  background-color: #d7d7d6 ;
+  border-radius: 6px;
+}
+
+@media (max-width: 767px){
+  .table-has-chart .details-control span{
+      display: none;
+  }
+  .table-has-chart .chart-container{
+      width: 1005px;
+  }
+
+  .mobile-table-chart-scroll-wrapper .row-chart h4,
+  .table-has-chart  .row-chart h4{
+      font-family: "UniversLight";
+      color: #5f5f5f;
+      font-size: 12px;
+      letter-spacing: 0.3px;
+      margin: 10px 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+        
+  .table-has-chart tr td.details-control{
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+  }
+}
+
+/* End  Table with Chart*/
+
+/* Historico de Consumo */
+.pvtArea-historico-consumo{
+  margin-bottom: 100px;  
+}
+
+.pvtArea-historico-consumo .table-pvt td{
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  
+  .pvtArea-historico-consumo .table-pvt{
+      margin-top: 30px;
+  }
+  
+  .pvtArea-historico-consumo .table-pvt td:nth-child(2),
+  .pvtArea-historico-consumo .table-pvt td:nth-child(3){
+      min-height: unset;
+      padding-top: 15px;
+      padding-bottom: 15px;
+  }
+
+  .pvtArea-historico-consumo .table-pvt td:nth-child(5){
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+}
+
+/* END Historico de Consumo */
+
+
+/* Historico de Consumo JA */
+.pvtArea-historico-consumo-ja .table-has-chart .row-chart{
+  padding-right: 2px;
+}
+
+/* END Historico de Consumo JA */
+
+/*  Segundavia */
+
+.white-bg-popup .fancybox-bg {
+  background: #ffffff;
+}
+
+.pvtArea-segundavia .table-pvt td{
+  text-align: center;
+}
+
+.pvtArea-segundavia{
+  margin-bottom: 70px;
+}
+
+.pvtArea-segundavia .pvtArea-account-multirow .pvtArea-account-row:first-child{
+  border-bottom: 0;
+}
+
+.pvtArea-segundavia .pvtArea-account-table-row.item-icon-btn{
+  border: 0;
+}
+
+.email-segunda-via-popup .fancybox-close-small{
+  display: none;
+}
+
+.email-segunda-via-popup{
+  max-width: calc(100% - 30px);
+  padding: 20px 30px 34px 30px;
+  width: 567px;
+  border: 1px solid #ff0f64;
+}
+
+.emailSegundaVia-cnt{
+  width: auto;
+}
+
+.emailSegundaVia-cnt .latam-h6{
+  font-family: "Univers";
+  font-size: 22px;
+  margin-bottom: 28px;
+}
+
+.emailSegundaVia-cnt .form-group{
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.emailSegundaVia-cnt.form-content input[type='checkbox'] + label{
+  margin-bottom: 0;
+}
+@media screen and (min-width:  1024px){
+  .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:first-child{
+      flex: 0 0 33%;
+  }
+
+  .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item {
+      flex: 0 0 auto;
+  }
+
+  .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:last-child {
+      margin-left: auto;
+  }
+
+  .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:last-child > div{
+      width: 100%;
+      padding:0;
+  }
+
+  .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-table-item:nth-child(2){
+      margin-right: 95px;
+  }
+
+  .pvtArea-segundavia .pvtArea-account-table-row.fourItems .pvtArea-account-item-title{
+      font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  
+  .pvtArea-segundavia .pvtArea-account-table-row.item-icon-btn{
+      margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .pvtArea-segundavia .pvtArea-info-box > p {
+      display: none;
+  }
+
+  .pvtArea-segundavia .pvtArea-account-multirow .pvtArea-account-row:last-child{
+      display: none;
+  }
+  
+  .pvtArea-segundavia table{
+      margin-top: 40px;
+  }
+
+  .pvtArea-segundavia .pvtArea-info-box{
+      margin-top: 14px;
+  }
+
+  
+  .email-segunda-via-popup{
+      padding: 20px 20px 34px 20px;
+  }
+
+  .emailSegundaVia-cnt .latam-h6 {
+      font-size: 20px;
+  }
+}
+
+/* END Segundavia */
+
+
+/* 
+---------------
+   Composicao da Faturamento 
+---------------
+*/
+
+  .pvtArea-composicao-faturamento{
+    margin-bottom: 100px;  
+  }
+
+  .pvtArea-account-row-faturamento{
+    padding-top: 0;
+  }
+
+  .pvtArea-account-row-faturamento .pvtArea-account-table-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+
+  .table-composicao-faturamento{
+    width: 100%;
+  }
+
+  .table-composicao-faturamento:not(.mobile),
+  .pvtArea-info-box{
+    display: none;
+  }
+
+  .table-composicao-faturamento.compact{
+    border-collapse: collapse;
+    margin-bottom: 80px;
+  }
+
+  .table-composicao-faturamento.compact thead th, 
+  .table-composicao-faturamento.compact thead td,
+  .table-composicao-faturamento.mobile td[rowspan] {
+    padding: 26px 15px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .table-composicao-faturamento.mobile td[rowspan]{
+    padding: 26px 5px;
+  }
+
+  .table-composicao-faturamento.compact th,
+  .table-composicao-faturamento.compact td{
+    border: 2px solid #e9e9e9;
+  }
+
+  .table-composicao-faturamento.compact tbody td{
+    padding: 10px 12px;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .table-composicao-faturamento.compact tr:nth-child(odd) > td{
+    background-color: #fff;
+  }
+
+  .table-composicao-faturamento.compact tr:nth-child(4n +1 ) > td, 
+  .table-composicao-faturamento.compact tr:nth-child(4n + 2 ) > td{
+    background-color: #f7f7f7;
+  }
+
+  .pvtArea-composicao-faturamento .pvtArea-account-row-cnt {
+    margin: 0;
+  }
+
+
+  .pvtArea-composicao-faturamento-info-mobile h2{
+    margin: 0 0 16px;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+
+  .pvtArea-composicao-faturamento-info-mobile p{
+    font-size: 20px;
+    color: #000;
+    margin: 40px 0 18px;
+    max-width: 300px;
+    line-height: 1.3;
+  }
+
+  @media screen and (max-width: 767px){
+    .pvtArea-account-row-faturamento .pvtArea-account-table-item{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .pvtArea-account-row-faturamento .pvtArea-account-table-item:nth-child(1){
+        margin-right: 20px;
+    }
+
+    .pvtArea-account-row-faturamento .pvtArea-account-table-item:nth-child(3){
+        width: 100%;
+    }
+    
+    .pvtArea-account-row-faturamento .pvtArea-account-item-title {
+        font-size: 16px;
+    }
+    
+    .pvtArea-composicao-faturamento .table-pvt.mobile-heading-on-side td {
+        padding:0 0 0 109px;
+    }
+
+    .pvtArea-composicao-faturamento .mobile-heading-on-side td span{
+        display: block;
+        padding: 9px 0px 9px 45px;
+        position: relative;
+    }
+    
+    .pvtArea-composicao-faturamento .mobile-heading-on-side td span:last-child{
+        border-top: 1px solid #E6E6E6;
+    }
+
+    .pvtArea-composicao-faturamento .table-pvt.mobile-heading-on-side td:before{
+        background-color: inherit;
+    }
+
+    .pvtArea-composicao-faturamento .mobile-heading-on-side td span:before {
+        content: attr(data-label);
+        font-family: "Univers";
+        width: 45px;
+        text-align: center;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #e3e3e2;
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+
+    .pvtArea-composicao-faturamento .table-pvt.mobile-heading-on-side td:nth-child(even){
+        background-color: #f7f7f7;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    .pvtArea-composicao-faturamento .pvtArea-account-table-row {
+        padding-bottom: 0;
+    }
+
+    .pvtArea-composicao-faturamento .pvtArea-account-table-row.threeItems .pvtArea-account-table-item{
+        margin: 19px 0 0;
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    .pvtArea-composicao-faturamento .pvtArea-account {
+        margin-top: 26px;
+        padding-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1281px) {
+    
+    .table-composicao-faturamento.compact{
+        margin-bottom: 135px;
+    }
+
+    .pvtArea-info-box{
+        display: block;
+    }
+
+    .table-composicao-faturamento:not(.mobile){
+        display: table;
+    }
+
+    .pvtArea-composicao-faturamento-info-mobile,
+    .table-composicao-faturamento.mobile{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 1023px){
+    .pvtArea-account.mobile-white{
+        margin-top: 0;
+    }
+  }
+
+/* 
+---------------
+    END Composicao da Faturamento 
+---------------
+*/
+
+
 
 @media (max-width: 767px){
   .pvtArea-info-box-icon-box p {
@@ -5287,7 +5807,11 @@ a:hover .latam-btn-cta--lightgrey {
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+
+  .hidden-xs{
+    display: none;
+  }
 
   .btn-hide-icons-xs.latam-btn-cta--lightgrey{
       min-width: unset;
@@ -5300,5 +5824,45 @@ a:hover .latam-btn-cta--lightgrey {
 
   .btn-hide-icons-xs.latam-btn-cta--lightgrey span:last-child{
       display: none
+  }
+
+    .table-pvt.mobile-heading-on-side td:before {
+      position: absolute;
+      left: 0;
+      width: 109px;
+      text-align: center;
+      background-color: #f5f4f4;
+      height: 100%;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #e3e3e2;
+      padding: 10px 10px;
+      font-size: 13px;
+    }
+
+    .table-pvt.mobile-heading-on-side td {
+      padding: 25px 15px 25px 124px;
+      min-height: 75px;
+      text-align: center !important;
+      font-size: 14px;
+    }
+
+    .table-pvt.mobile-heading-on-side tr > td:nth-child(even){
+      background-color: #fff;
+    }
+
+    .table-pvt.mobile-heading-on-side tr:hover > td{
+      background-color: #fff;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px){
+  .visible-xs{
+    display: none;
   }
 }
