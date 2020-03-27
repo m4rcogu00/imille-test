@@ -308,7 +308,7 @@ $(function(){
 
                         ctx.fillText( 'Normal', bar._model.x, (chartInstance.controller.height - 36));
 
-                        drawChartFlag(ctx, bar._model.x - 4, (chartInstance.controller.height - 25));
+                        drawChartFlag(dataset.data[index], ctx, bar._model.x - 4, (chartInstance.controller.height - 25));
                     
                     }),this)
                 }),this);
@@ -316,13 +316,22 @@ $(function(){
         }
     };
 
-    function drawChartFlag(ctx, x, y){
-        
-        base_image = new Image();
-        base_image.src = '../img/privateArea/green-flag.png';
+    function drawChartFlag(consumo , ctx, x, y){
+        let greenFlag = '../img/privateArea/green-flag.png';
+        let redFlag = '../img/privateArea/red-flag.png';
+        let yellowFlag = '../img/privateArea/yellow-flag.png';
+        var base_image = new Image();
 
         /*  --Conditions to switch between flag types--  */
-
+        if(consumo >= 300){
+            base_image.src = redFlag;
+        }else if(consumo >= 200){
+            base_image.src = yellowFlag;
+        }else{
+            base_image.src = greenFlag;
+        }
+        /*  --Conditions to switch between flag types--  */
+        
         base_image.onload = function(){
             ctx.drawImage(base_image, x, y, 18, 18);
         }
