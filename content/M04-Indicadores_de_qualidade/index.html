@@ -52,7 +52,7 @@ layout = "moduli_private_area_brasil"
         </div>
 
 
-        <div class="tabs__label-wrapper">
+        <div class="tabs__label-wrapper" id="pvtAreaIndicadoresSlider">
 
             <div class="tabs__btn-prev">
                 <div class="icon-chevron-left"></div>
@@ -60,49 +60,48 @@ layout = "moduli_private_area_brasil"
             </div>
 
             <div class="swiper-container">
-                
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-1" href="#tab-1" class="tabs__label latam-a active">
                             Fev 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-2" href="#tab-2" class="tabs__label latam-a">
                             Mar 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-3" href="#tab-3" class="tabs__label latam-a">
                             Abr 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-4" href="#tab-4" class="tabs__label latam-a">
                             Mai 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-5" href="#tab-5" class="tabs__label latam-a">
                             Jun 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-6" href="#tab-6" class="tabs__label latam-a">
                             Jul 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-7" href="#tab-7" class="tabs__label latam-a">
                             Ago 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-8" href="#tab-8" class="tabs__label latam-a">
                             Set 2019
                         </a>
                     </div> 
-                    <div class="swiper-slide swiper-slide-active">
+                    <div class="swiper-slide">
                         <a id="tab-9" href="#tab-9" class="tabs__label latam-a">
                             Oct 2019
                         </a>
@@ -110,149 +109,1256 @@ layout = "moduli_private_area_brasil"
                 </div>
             </div>
 
-            <div class="tabs__btn-next next">
+            <div class="tabs__btn-next">
                 Próximo
                 <div class="icon-chevron-right"></div>
             </div>
         </div>
-        
-        <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
+        <div class="tabs-content">
+            
+            <div id="tab-1" class="tab-content" style="display: block;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
 
-        <div class="pvtArea-mini-boxes">
-            <div class="mini-info-item">
-                <p>Referência Ressarcimento</p>
-                <p>201910</p>
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>FEV-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
             </div>
+            <div id="tab-2" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
 
-            <div class="mini-info-item">
-                <p>Referência Apurada</p>
-                <p>AUG-19</p>
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>MAR-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>11.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>38.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
             </div>
+            <div id="tab-3" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
 
-            <div class="mini-info-item">
-                <p>TUsd</p>
-                <p>10.54</p>
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>ABR-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
             </div>
+            <div id="tab-4" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
 
-            <div class="mini-info-item">
-                <p>Eusd</p>
-                <p>40.53</p>
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>MAI-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            <div id="tab-5" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
+
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>JUN-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            <div id="tab-6" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
+
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>JUL-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            <div id="tab-7" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
+
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>AUG-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            <div id="tab-8" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
+
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>SET-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            <div id="tab-9" class="tab-content" style="display: none;">
+                <p class="selecbox-small-label" style="margin-top: 20px;">Mês de apuração: SET 19 | Conjunto Elétrico: LAPA</p>
+
+                <div class="pvtArea-mini-boxes">
+                    <div class="mini-info-item">
+                        <p>Referência Ressarcimento</p>
+                        <p>201910</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Referência Apurada</p>
+                        <p>OCT-19</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>TUsd</p>
+                        <p>10.54</p>
+                    </div>
+
+                    <div class="mini-info-item">
+                        <p>Eusd</p>
+                        <p>40.53</p>
+                    </div>
+                </div>
+
+                <div class="table-scroll-wrapper pvtArea-table-scroll">
+                    <table class="pvtArea-indicadores-qualidade-table">
+                        <thead>
+                            <tr >
+                                <th scope="col" style="width:27%">Indicadores</th>
+                                <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td style="width:12.5%"></td>
+                                <td style="width:12.5%"></td>
+                            </tr>
+                            <tr  class="t-inner-heading">
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <!-- <th scope="col">Indicadores</th> -->
+                                <th scope="col">Mensal</th>
+                                <th scope="col">Meta</th>
+                                <th scope="col">Apurado</th>
+                                <th scope="col">Valor (R$)</th>
+                                <th scope="col">Tem indenização?</th>
+                                <th scope="col">Foi indenizado?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DMIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(DICRI)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Trimestral</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+            
+                            <tr class="t-inner-heading">
+                                <th scope="row" >Anual</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+            
+                            <tr>
+                                <th scope="row">(DIC)</th>
+                                <td>4,59</td>
+                                <td>5,80</td>
+                                <td>3,50</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                            </tr>
+                            
+                            <tr>
+                                <th scope="row">(FIC)</th>
+                                <td>4,59</td>
+                                <td>0,00</td>
+                                <td>0,00</td>
+                                <td>Nao</td>
+                                <td>Nao</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
             </div>
         </div>
-
-        <div class="table-scroll-wrapper pvtArea-table-scroll">
-            <table class="pvtArea-indicadores-qualidade-table">
-                <thead>
-                    <tr >
-                        <th scope="col" style="width:27%">Indicadores</th>
-                        <td scope="col" style="width:48%" colspan="3">Limite Permitido</td>
-                        <!-- <td></td> -->
-                        <!-- <td></td> -->
-                        <td style="width:12.5%"></td>
-                        <td style="width:12.5%"></td>
-                    </tr>
-                    <tr  class="t-inner-heading">
-                        <!-- <th scope="col">Indicadores</th> -->
-                        <!-- <th scope="col">Indicadores</th> -->
-                        <th scope="col">Mensal</th>
-                        <th scope="col">Meta</th>
-                        <th scope="col">Apurado</th>
-                        <th scope="col">Valor (R$)</th>
-                        <th scope="col">Tem indenização?</th>
-                        <th scope="col">Foi indenizado?</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">(DIC)</th>
-                        <td>4,59</td>
-                        <td>5,80</td>
-                        <td>3,50</td>
-                        <td>Sim</td>
-                        <td>Nao</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">(FIC)</th>
-                        <td>4,59</td>
-                        <td>0,00</td>
-                        <td>0,00</td>
-                        <td>Nao</td>
-                        <td>Nao</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">(DMIC)</th>
-                        <td>4,59</td>
-                        <td>0,00</td>
-                        <td>0,00</td>
-                        <td>Nao</td>
-                        <td>Nao</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">(DICRI)</th>
-                        <td>4,59</td>
-                        <td>0,00</td>
-                        <td>0,00</td>
-                        <td>Sim</td>
-                        <td>Sim</td>
-                    </tr>
-                    
-                    <tr class="t-inner-heading">
-                        <th scope="row" >Trimestral</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-    
-                    <tr>
-                        <th scope="row">(DIC)</th>
-                        <td>4,59</td>
-                        <td>5,80</td>
-                        <td>3,50</td>
-                        <td>Nao</td>
-                        <td>Nao</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">(FIC)</th>
-                        <td>4,59</td>
-                        <td>5,80</td>
-                        <td>3,50</td>
-                        <td>Nao</td>
-                        <td>Nao</td>
-                    </tr>
-    
-                    <tr class="t-inner-heading">
-                        <th scope="row" >Anual</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-    
-                    <tr>
-                        <th scope="row">(DIC)</th>
-                        <td>4,59</td>
-                        <td>5,80</td>
-                        <td>3,50</td>
-                        <td>Sim</td>
-                        <td>Sim</td>
-                    </tr>
-                    
-                    <tr>
-                        <th scope="row">(FIC)</th>
-                        <td>4,59</td>
-                        <td>0,00</td>
-                        <td>0,00</td>
-                        <td>Nao</td>
-                        <td>Nao</td>
-                    </tr>
-                </tbody>
-                
-            </table>
-        </div>
-
 
         <div class="pvtArea-indicadores-info-box">
 
@@ -292,6 +1398,10 @@ layout = "moduli_private_area_brasil"
         margin-bottom: 100px;
     }
 
+    .pvtArea-indicadores-qualidade .swiper-wrapper{
+        box-sizing: border-box;
+    }
+
     .pvtArea-indicadores-qualidade .tabs__btn-next, 
     .pvtArea-indicadores-qualidade .tabs__btn-prev,
     .pvtArea-indicadores-qualidade .tabs__label{
@@ -299,7 +1409,12 @@ layout = "moduli_private_area_brasil"
         line-height: 1.3;
         display: flex;
         align-items: center;
+        box-sizing: border-box;
         
+    }
+
+    .tabs__btn-next.swiper-button-disabled, .tabs__btn-prev.swiper-button-disabled{
+        background-color: #f4f4f4;
     }
 
     .pvtArea-indicadores-qualidade .tabs__label{
@@ -492,34 +1607,38 @@ layout = "moduli_private_area_brasil"
 <script>
 
 $(function(){
-
-    var nextButon = document.querySelector('.tabs__btn-next');
-    var prevButon = document.querySelector('.tabs__btn-prev');
     
-    var mySwiper = new Swiper ('.swiper-container', {
-        slidesPerView: 8,
-        navigation: {
-            nextEl: '.tabs__btn-next',
-            prevEl: prevButon,
-        },
-        breakpoints: {
-            1300: {
-                slidesPerView: 7
+    setTimeout(function(){
+        var mySwiper = new Swiper ('#pvtAreaIndicadoresSlider .swiper-container', {
+            slidesPerView: 8,
+            prevButton: "#pvtAreaIndicadoresSlider .tabs__btn-prev",
+            nextButton: "#pvtAreaIndicadoresSlider .tabs__btn-next",
+            slideToClickedSlide: true,
+            breakpoints: {
+                1300: {
+                    slidesPerView: 7
+                },
+                1100: {
+                    slidesPerView: 6
+                },
+                992: {
+                    slidesPerView: 5,
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                576: {
+                    slidesPerView: 1
+                }
             },
-            1100: {
-                slidesPerView: 6
-            },
-            992: {
-                slidesPerView: 5,
-            },
-            768: {
-                slidesPerView: 3
-            },
-            576: {
-                slidesPerView: 1
-            }
-        },
-    })
+        })
+    }, 100)
 
+    $(".pvtArea-indicadores-qualidade .tabs__label").on("click", function(c) {
+        c.preventDefault();
+        $(this).addClass("active").parent().siblings().children().removeClass("active");
+        ref = $(this).attr("href");
+        $(".tabs-content " + ref).css("display", "block").siblings().css("display", "none")
+    });
 });
 </script>

@@ -5317,6 +5317,7 @@ form.btnCombined input[type="submit"] {
   font-family: "UniversLight";
 }
 
+.pvtArea-table-scroll,
 .table-has-chart .table-chart-scroll-wrapper,
 .mobile-table-chart-scroll-wrapper .table-chart-scroll-wrapper{
   width: 100%;
